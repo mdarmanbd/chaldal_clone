@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.d-none{
+    display: none;
+}
+.active{
+    display: flex !important;
+}
+
+.bg-bennar{
+    background-image: url(../../src/imges/ben02.jpg);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.svgicon{
+    width: 45px;
+    margin-left: auto;
+}
+
+.threedCardHover{
+    z-index: -10;
+}
+.threedCardHover:hover::before{
+    content: '';
+    color: rgb(10, 10, 36);
+    position: absolute;
+    z-index: -10;
+    
+    
+}
+.threedCardHover:hover{
+    background: rgb(250, 221, 113);
+    border-radius: 5px;
+    position: relative;
+    z-index: 100;
+    
+}
+
+.slider{
+    transform: scale(0);
+    transition: transform 0.7s;
+}
+
+.slider.current{
+    transform: scale(1);
+    transition: transform 0.7s;
+}
+
+.bg-own-bussiness{
+    background-image: url(../../src/imges/ben02.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+    z-index: -10;
+}
+
+.bg-flag{
+    background-image: url(../src/imges/bangladesh-large.png);
+    width: 7%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-gray-3a3a3a{
+    background: #3a3a3a;
+}
